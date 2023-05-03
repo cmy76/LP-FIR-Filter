@@ -1,2 +1,25 @@
-# LP FIR-Filter
- A FIR low-pass filter implemented with verilog
+# 低通FIR滤波器
+ 使用Verilog实现的FIR低通滤波器
+# 输入信号
+ 输入信号为0.25MHz和7.5MHz的混合余弦信号，信号值通过最大最小标准化到0-1之间，然后统一乘512映射到0-512之间，存放在coe文件中，通过例化ROM的方式来产生输入信号。
+# 信号发生模块
+ 通过读取ROM的方式产生信号(12位)，输入到滤波器模块中
+# FIR滤波器参数
+ 阶数：31
+ 类型：低通
+ 设计方式：最小二乘
+ Fs = 50MHz
+ Fpass = 1MHz
+ Fstop = 6MHz
+ Wpass = 1
+ Wstop = 1
+ 通过MATLAB2018b中的fdatool窗口中设计，获得系数后将其扩大2048倍取整
+# 乘法器
+ 12位booth补码乘法器，没有延时
+# 加法器
+ 直接使用+号
+# FIFO和UART
+ 未实现，FIR滤波速度过快，UART传输太慢，无法在上位机观察到波形
+# 验证
+ 通过了行为级验证和ILA板级验证
+ 
