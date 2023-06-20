@@ -11,39 +11,65 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="1,842.000000 us"></ZoomStartTime>
-      <ZoomEndTime time="2,031.600001 us"></ZoomEndTime>
-      <Cursor1Time time="1,901.400000 us"></Cursor1Time>
+      <ZoomStartTime time="0.000000 us"></ZoomStartTime>
+      <ZoomEndTime time="95.800001 us"></ZoomEndTime>
+      <Cursor1Time time="45.980100 us"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="238"></NameColumnWidth>
-      <ValueColumnWidth column_width="115"></ValueColumnWidth>
+      <ValueColumnWidth column_width="105"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="5" />
-   <wvobject fp_name="/tb_top_filter/sys_clk" type="logic">
+   <WVObjectSize size="11" />
+   <wvobject fp_name="/tb_top_filter/tb/sys_clk" type="logic">
       <obj_property name="ElementShortName">sys_clk</obj_property>
       <obj_property name="ObjectShortName">sys_clk</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_top_filter/sys_rst_n" type="logic">
+   <wvobject fp_name="/tb_top_filter/tb/sys_rst_n" type="logic">
       <obj_property name="ElementShortName">sys_rst_n</obj_property>
       <obj_property name="ObjectShortName">sys_rst_n</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_top_filter/send_data" type="logic">
+   <wvobject fp_name="/tb_top_filter/tb/send_data" type="logic">
       <obj_property name="ElementShortName">send_data</obj_property>
       <obj_property name="ObjectShortName">send_data</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_top_filter/tb/signal" type="array">
       <obj_property name="ElementShortName">signal[11:0]</obj_property>
       <obj_property name="ObjectShortName">signal[11:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_filter/tb/ref" type="array">
+      <obj_property name="ElementShortName">ref[11:0]</obj_property>
+      <obj_property name="ObjectShortName">ref[11:0]</obj_property>
       <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
       <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
       <obj_property name="CellHeight">100</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_top_filter/tb/yout" type="array">
-      <obj_property name="ElementShortName">yout[7:0]</obj_property>
-      <obj_property name="ObjectShortName">yout[7:0]</obj_property>
+      <obj_property name="ElementShortName">yout[11:0]</obj_property>
+      <obj_property name="ObjectShortName">yout[11:0]</obj_property>
       <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
       <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
       <obj_property name="CellHeight">100</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_filter/tb/error" type="array">
+      <obj_property name="ElementShortName">error[3:0]</obj_property>
+      <obj_property name="ObjectShortName">error[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_filter/tb/coef" type="array">
+      <obj_property name="ElementShortName">coef[15:0][11:0]</obj_property>
+      <obj_property name="ObjectShortName">coef[15:0][11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_filter/tb/done" type="logic">
+      <obj_property name="ElementShortName">done</obj_property>
+      <obj_property name="ObjectShortName">done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_filter/tb/uart_data" type="array">
+      <obj_property name="ElementShortName">uart_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">uart_data[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_filter/tb/send_ena" type="logic">
+      <obj_property name="ElementShortName">send_ena</obj_property>
+      <obj_property name="ObjectShortName">send_ena</obj_property>
    </wvobject>
 </wave_config>
